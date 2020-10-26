@@ -1,0 +1,354 @@
+* {
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+}
+
+form.signup,
+form.login {
+	margin-top: 50px;
+}
+
+.brand-logo {
+	width: 70px;
+	height: 70px;
+}
+
+#service {
+	margin-top: 100px;
+	float: right;
+	display: block;
+	height: auto;
+	max-width: 130%;
+}
+
+body {
+	background-image: url('../Img/email-pattern.webp');
+	background-color: lightgray; /* Used if the image is unavailable */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+.myagendatext {
+	
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	color: #5a0748;
+	
+}
+
+h2 {
+	margin-top: 20px;
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	color: #5a0748;
+	font-size: 50px;
+}
+
+h1 {
+	
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	color: #5a0748;
+	
+}
+
+#title{
+	padding-left: 400px;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	color: #5a0748;
+}
+
+text {
+
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	color: #5a0748;
+	
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.column-66 {
+	float: left;
+	width: 66.66666%;
+	padding: 20px;
+}
+
+.column-33 {
+	float: left;
+	width: 33.33333%;
+	padding: 20px;
+}
+
+.col-md-4 {
+	float: center;
+}
+
+.large-font {
+	font-size: 48px;
+}
+
+.xlarge-font {
+	font-size: 64px;
+	font-family: 'Lobster', cursive;
+	color: #5a0748;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #5a0748;
+}
+
+#logo {
+	float: right;
+	display: block;
+	height: auto;
+	max-width: 130%;
+}
+
+@media screen and (max-width: 1000px) {
+	.column-66,
+	.column-33,
+	.col-md-4 {
+		width: 100%;
+		text-align: center;
+	}
+
+	img {
+		margin: auto;
+	}
+}
+/* The grid: Three equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 50px;
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 35px;
+	cursor: pointer;
+	color: white;
+}
+
+.containerTab {
+	padding: 20px;
+	color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+	float: right;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+	padding: 250px;
+}
+
+#date {
+	float: right;
+	font-family: 'Comfortaa', cursive;
+}
+
+/*calendar*/
+
+.month {
+	padding: 70px 25px;
+	width: 100%;
+	background: #5a0748;
+	text-align: center;
+}
+
+.month ul {
+	margin: 0;
+	padding: 0;
+}
+
+.month ul li {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.month .prev {
+	float: left;
+	padding-top: 10px;
+}
+
+.month .next {
+	float: right;
+	padding-top: 10px;
+}
+
+.weekdays {
+	margin: 0;
+	padding: 10px 0;
+	background-color: #ddd;
+}
+
+.weekdays li {
+	display: inline-block;
+	width: 13.6%;
+	color: #666;
+	text-align: center;
+}
+
+.days {
+	padding: 10px 0;
+	background: #eee;
+	margin: 0;
+}
+
+.days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 13.6%;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #777;
+}
+
+.days li .active {
+	padding: 5px;
+	background: #5a0748;
+	color: white !important;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+	.weekdays li,
+	.days li {
+		width: 13.1%;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.weekdays li,
+	.days li {
+		width: 12.5%;
+	}
+	.days li .active {
+		padding: 2px;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.weekdays li,
+	.days li {
+		width: 12.2%;
+	}
+}
+
+/*STYLE USER*/
+button.submit {
+	float: right;
+}
+
+.card-header button.delete,
+button.edit {
+	float: right;
+	margin: 5px;
+}
+
+.contacts-container {
+	margin-top: 50px;
+	padding-left: 380px;
+	
+}
+
+.contacts-list {
+	margin-top: 25px;
+}
+
+#contacts-firstName,
+#contacts-lastName,
+#contacts-phoneNumber,
+#contacts-email,
+#contacts-notes {
+	width: 100%;
+	height: 35px;
+	margin-top: 5px;
+}
+
+.top-30 {
+	margin-top: 30px;
+}
+
+#submit {
+	background-color: #5a0748;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+/*calendar*/
+
+#rcorners2 {
+	text-align: center ;
+	margin-top:500px;
+	border-radius: 25px;
+	border: 2px solid #5a0748;
+	width: 900px;
+	height: 100px;
+	font-family: 'Dancing Script', cursive;
+	font-size:45px;
+	}
+
+
+	.container-calendar{
+		padding-left: 290px;
+	}
+h3 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	color: #5a0748;
+	font-size: 30px;
+}
+
+.products-container{
+	margin-top: 80px;
+padding-left: 400px;
+width: 400px;
+}
+
+.first-strip{
+	font-size: 22px;
+}
+
+.table{
+	padding-left: 200px;
+}
+
+#roundedsquare{
+	padding-left: 200px;
+}
+
+#name{
+	padding-left: 10px;
+}

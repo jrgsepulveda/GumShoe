@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GumShoe | Appoinments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#"><img class="brand-logo" src="./Img/logo.gif"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="contacts.html"><i class="material-icons left">account_circle</i>Contacts</a></li>
+                <li><a href="calendar.html"><i class="material-icons left">perm_contact_calendar</i>Calendar</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2> Appoinments</h2>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="appoinments-container">
+                <h5>Appoinments</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type Of Appoinment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="form-control">
+                            <form id="appoinments-form">
+                                <td colspan="4">
+                                    <input placeholder="Enter date" id="appoinment-date" type="text"
+                                        class="form-control" />
+                                    <input placeholder="Enter type of appoinment" id="appoinment-type" type="text"
+                                        class="form-control" />
+                                </td>
+                                <td><button type="submit" class="btn btn-success">Create Appoinment</button>
+                                </td>
+
+                            </form>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script type="text/javascript">src = "js/materialize.min.js"</script>
+                <script src="moment.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script type="text/javascript" src="js/appoinments.js"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                    crossorigin="anonymous"></script>
+
+</html>

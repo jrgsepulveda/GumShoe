@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GumShoe | Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#"><img class="brand-logo" src="./Img/logo.gif"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="contacts.html"><i class="material-icons left">account_circle</i>Contacts</a></li>
+        <li><a href="calendar.html"><i class="material-icons left">perm_contact_calendar</i>Calendar</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p id="date"> <span id="datetime"></span></p>
+
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1>Products</h1>
+      <div class="products-container">
+
+        <table class="table table-striped">
+          <thead>
+            <tr class="first-strip">
+              <th>Id</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Price</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="form-row">
+              <form id="products-form">
+                <td colspan="7">
+                  <input placeholder="Id" id="Products-id" type="text" />
+                  <br>
+                  <input placeholder="Type" id="Products-type" type="text" />
+                  <br>
+                  <input placeholder="Amount" id="Products-amount" type="text" />
+                  <br>
+                  <input placeholder="Price" id="Products-price" type="text" />
+                </td>
+                <td><button type="submit" class="btn btn-success" id=submit>Create New
+                    Product</button>
+                </td>
+              </form>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <footer>
+    <!-- Copyright -->
+    <p>© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> GumShoe.com</a>
+    </p>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+  <script type="text/javascript">src = "js/materialize.min.js"</script>
+  <script src="moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/products.js"></script>
+
+
+</body>
+
+</html>
