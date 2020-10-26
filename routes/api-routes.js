@@ -1,9 +1,9 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
-const Appointments = require("../models/appointment");
-const Contacts = require("../models/contact");
-const Products = require("../models/product");
+const Appointments = require("../models/appointments");
+const Contacts = require("../models/contacts");
+const Products = require("../models/products")
 
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -199,11 +199,13 @@ db.Contacts.findOne({
   res.json(dbContacts);
 });
 });
+
 app.post("/api/contacts", function(req, res) {
 db.Contacts.create(req.body).then(function(dbContacts) {
   res.json(dbContacts);
 });
 });
+
 app.delete("/api/contacts/:id", function(req, res) {
 db.Contacts.destroy({
   where: {
@@ -213,3 +215,4 @@ db.Contacts.destroy({
   res.json(dbContacts);
 });
 });*/
+

@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  let Appointment = sequelize.define("Appointment", {
+  let Appointments = sequelize.define("Appointments", {
     date: {
       type: DataTypes.DATE,
       allowNull: false
@@ -10,12 +10,12 @@ module.exports = function (sequelize, DataTypes) {
     },
   });
 
-  Appointment.associate = function (models) {
+  Appointments.associate = function (models) {
     // Associating Author with Posts
     // When an Author is deleted, also delete any associated Posts
-    Appointment.hasMany(models.Contact, {
+    Appointments.hasMany(models.Contacts, {
       onDelete: "cascade"
     });
   };
-  return Appointment;
+  return Appointments;
 };

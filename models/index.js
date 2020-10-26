@@ -8,17 +8,6 @@ var env       = process.env.NODE_ENV || 'development';
 var config    = require(__dirname + '/../config/config.json')[env];
 var db        = {};
 
-<<<<<<< HEAD
-var sequelize = new Sequelize(
-  process.env.DB_DATABASE_NAME||config.database, 
-  process.env.DB_USER||config.username, 
-  process.env.DB_PASSWORD||config.password, 
-  {
-    ...config,
-    host:process.env.DB_HOST||config.host,
-    port:process.env.DB_PORT||config.port
-  });
-=======
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
@@ -34,7 +23,6 @@ if (config.use_env_variable) {
 //     host:process.env.DB_HOST||config.host,
 //     port:process.env.DB_PORT||config.port
 //   });
->>>>>>> 2310cc3b9f3a7def530ade4c6dd4451c680dc1cf
 
 fs
   .readdirSync(__dirname)
